@@ -313,6 +313,12 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              (info-xref ((t (,@fmt-undr ,@fg-blue))))
              (info-xref-visited ((t (,@fg-magenta :inherit info-xref))))
              ;; org
+	     (org-block-begin-line
+	      ((t (,@fmt-bold :underline (find-color 'magenta) ,@fg-magenta ,@bg-base02))))
+	     (org-block-background
+	      ((t ( ,@bg-base02 ))))
+	     (org-block-end-line
+	      ((t (,@fmt-bold :overline (find-color 'magenta) ,@fg-magenta ,@bg-base02))))
              (org-hide ((t (,@fg-base03))))
              (org-todo ((t (,@fmt-bold ,@fg-base03 ,@bg-red))))
              (org-done ((t (,@fmt-bold ,@fg-green))))
