@@ -325,6 +325,8 @@ the \"Gen RGB\" column in solarized-definitions.el to improve them further."
              ;; org
 	     (org-block-begin-line
 	      ((t (,@fmt-bold :underline (find-color 'magenta) ,@fg-magenta ,@bg-base02))))
+       (org-block
+        ((t (:inherit shadow :background "#aaaaaa" :foreground "Black")))) 
 	     (org-block-background
 	      ((t ( ,@bg-base02 ))))
 	     (org-block-end-line
